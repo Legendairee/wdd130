@@ -40,8 +40,7 @@ p,
 section,
 article {
     margin: 16px;
-    /* border: 2px solid black; */
-    padding: 8PX;
+    padding: 8px;
 }
 
 .socialmedia a {
@@ -85,11 +84,8 @@ article {
 .hero article img {
     float: right;
     width: 125px;
-    margin-left: 6px;
 }
 
-.hero article p {
-
-    padding: 0 20px 0 0;
-
+nav ul {
+    list-style-type: none;
 }
