@@ -1,8 +1,6 @@
 :root {
     --primary-color: #055a05;
     /* forest green */
-    --secondary-color: #f4a261;
-    /* warm sand */
     --accent1-color: #264653;
     /* dark slate blue */
     --accent2-color: #e9c46a;
@@ -47,7 +45,7 @@ article {
     text-decoration: none;
 }
 
-.hero {
+.hero article {
     position: relative;
 }
 
