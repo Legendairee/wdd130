@@ -24,7 +24,7 @@ header {
     display: grid;
     grid-template-columns: 120px 1fr 1fr;
     align-items: center;
-    background-color: rgb(8, 92, 210);
+    background-color: rgb(28, 21, 9);
 }
 
 nav .navigation {
@@ -118,16 +118,17 @@ footer {
 }
 
 .adventure figcaption {
-    font-size: 1.1rem;
-    color: rgb(65, 53, 22);
-    text-shadow: 2px 2px 4px rgb(165, 144, 87);
+    font-size: 1rem;
+    color: rgb(65, 53, 22, 0.90);
+    font-weight: 600;
+
 }
 
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 100px;
     align-items: center;
-    background-color: rgb(8, 92, 210);
+    background-color: rgb(28, 21, 9);
     margin-top: 50px;
     justify-items: center;
     place-content: center;
@@ -140,6 +141,7 @@ footer {
 
 .socialmedia a {
     flex: 1 1 auto;
+    text-decoration: none;
 }
 
 .socialmedia img {
@@ -149,7 +151,7 @@ footer {
 
 footer p {
     grid-column: 1/4;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #ffffff;
     font-weight: 600;
     margin-left: 80px;
@@ -168,10 +170,6 @@ section,
 article {
     margin: 16px;
     padding: 8px;
-}
-
-.socialmedia a {
-    text-decoration: none;
 }
 
 .hero {
