@@ -24,7 +24,7 @@ header {
     display: grid;
     grid-template-columns: 120px 1fr 1fr;
     align-items: center;
-    background-color: rgba(8, 93, 210, 0.881)
+    background-color: rgb(8, 92, 210);
 }
 
 nav .navigation {
@@ -36,15 +36,14 @@ nav .navigation {
 
 nav .navigation a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     font-size: 1.1rem;
-    font-weight: 500;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    font-weight: 600;
 }
 
 .navigation a:hover {
-    color: rgba(238, 20, 250, 0.9);
     text-decoration: underline;
+    transform: translateY(-2px);
 }
 
 #logo {
@@ -79,10 +78,6 @@ footer {
     height: auto;
 }
 
-.history h2 {
-    font-size: 2rem;
-}
-
 .history p {
 
     color: #111111;
@@ -90,6 +85,7 @@ footer {
 
 .history h2 {
     grid-column: 1/4;
+    font-size: 2rem;
 }
 
 .adventure {
@@ -144,8 +140,6 @@ footer {
 
 .socialmedia a {
     flex: 1 1 auto;
-    flex-direction: flex-end;
-
 }
 
 .socialmedia img {
@@ -155,8 +149,9 @@ footer {
 
 footer p {
     grid-column: 1/4;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #ffffff;
+    font-weight: 600;
     margin-left: 80px;
 
 }
