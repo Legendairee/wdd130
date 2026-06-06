@@ -303,14 +303,17 @@ textarea::placeholder {
 }
 
 .radio-group label {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
+    cursor: pointer;
+
 }
 
-.radio legend {
+.radio h3 {
     width: 80px;
     margin: 0;
     font-weight: bold;
+    font-size: 14px;
 }
 
 .radio-options {
