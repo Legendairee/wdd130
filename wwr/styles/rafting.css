@@ -314,6 +314,7 @@ textarea::placeholder {
     margin: 0;
     font-weight: bold;
     font-size: 14px;
+    color: #1f1f1f;
 }
 
 .radio-options {
