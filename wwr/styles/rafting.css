@@ -309,7 +309,7 @@ textarea::placeholder {
 
 }
 
-.radio h3 {
+.radio h2 {
     width: 80px;
     margin: 0;
     font-weight: bold;
@@ -383,7 +383,7 @@ textarea::placeholder {
     margin-top: 20px;
 }
 
-.profile h2 {
+.profile h3 {
     grid-column: 1/4;
     margin-top: -10px;
     margin-bottom: 10px;
