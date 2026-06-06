@@ -72,6 +72,9 @@ footer {
     place-items: center;
     background-color: #f8f9fa;
     padding: 40px 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .history img {
@@ -98,14 +101,15 @@ footer {
     place-items: center;
     gap: 10px;
     background-color: #f8f9fa;
+    margin: 0 auto;
 }
 
 .adventure h2 {
     grid-column: 1/6;
-    margin: 20px;
-    font-size: 2rem;
     color: var(--primary-color);
     text-shadow: none;
+    margin-bottom: 10px;
+    font-size: 1.7rem;
 }
 
 .adventure img {
@@ -136,9 +140,10 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 100px;
     align-items: center;
     background-color: rgb(28, 21, 9);
-    margin-top: 50px;
+    margin-top: 20px;
     justify-items: center;
     place-content: center;
+
 }
 
 .socialmedia {
@@ -187,10 +192,6 @@ article {
     position: absolute;
 }
 
-.hero h1 {
-    position: absolute;
-}
-
 .hero img {
     display: block;
     width: 100%;
@@ -198,7 +199,7 @@ article {
 
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -231,4 +232,179 @@ article {
 
 header img {
     margin: 5px;
+}
+
+/* css for contact page */
+
+.address {
+    text-align: center;
+    margin: 10px;
+}
+
+.address h1 {
+    color: #1f1f1f;
+    font-weight: bold;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.7);
+}
+
+.contact-info {
+    font-style: normal;
+    color: #1f1f1f;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.contact-info a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.map-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0px;
+
+}
+
+.form {
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: grid;
+}
+
+input,
+textarea {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    border: 1.2px solid #423f3f;
+    border-radius: 0.5rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #555555;
+    opacity: 1;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.radio-group label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.radio legend {
+    width: 80px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.radio-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 60px;
+}
+
+.column1 input {
+    margin-left: 35px;
+    border: 1.2px solid #423f3f;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.group.map iframe {
+    border: 0;
+    width: 450px;
+    height: 350px;
+    border-radius: 8px;
+}
+
+.change input {
+    margin-left: 32px;
+}
+
+.form-item label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.column2 textarea {
+    width: 280px;
+}
+
+.column3 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: -25px;
+}
+
+.column3 label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.form button {
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1.2px solid #423f3f;
+    border-radius: 4px;
+    width: 285px;
+    background-color: #1e3a8a;
+    color: #ffffff;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    gap: 10px;
+    background-color: #eee;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.profile h2 {
+    grid-column: 1/4;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+    color: #006400;
+}
+
+.profile img {
+    width: 150px;
+    height: auto;
+    border-radius: 4px;
+    margin: 0 0 10px 0;
+}
+
+.profile figure {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0 10px 0;
+}
+
+.profile figcaption {
+    font-size: 1rem;
+    color: #1f1f1f;
+    font-weight: 700;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.7);
 }
