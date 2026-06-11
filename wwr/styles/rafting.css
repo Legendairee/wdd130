@@ -15,7 +15,15 @@
     box-sizing: border-box;
 }
 
+html,
 body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
     font-family: var(--body-font);
     color: var(--accent1-color);
 }
@@ -60,10 +68,20 @@ nav .navigation a {
 }
 
 header,
-main,
 footer {
-    width: 840px;
+    width: 100%;
+    max-width: none;
     margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .history {
@@ -186,16 +204,29 @@ article {
 
 .hero {
     position: relative;
+    width: 100%;
+    margin: 0;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    overflow: hidden;
 }
 
 .hero article {
     position: absolute;
+    width: 98%;
+    background-color: var(--accent2-color);
+    opacity: 1;
+    bottom: 5px;
+    left: 10px;
+    margin: 0;
+
 }
 
 .hero img {
     display: block;
     width: 100%;
     height: auto;
+    object-fit: cover;
 
 }
 
@@ -208,17 +239,6 @@ article {
     opacity: 0.95;
     background-color: var(--accent1-color);
     color: #fff;
-}
-
-article {
-    position: absolute;
-    width: 98%;
-    background-color: var(--accent2-color);
-    opacity: 1;
-    bottom: 5px;
-    left: 10px;
-    margin: 0;
-
 }
 
 .hero article img {
@@ -262,10 +282,9 @@ header img {
 .map-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
     margin: 0 auto;
     margin-top: 30px;
-    padding: 0px;
+    padding: 10px;
 
 }
 
@@ -324,6 +343,12 @@ textarea::placeholder {
     margin-right: 60px;
 }
 
+.form-item.column1 {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
 .column1 input {
     margin-left: 35px;
     border: 1.2px solid #423f3f;
@@ -338,12 +363,25 @@ textarea::placeholder {
     border-radius: 8px;
 }
 
+.map {
+    margin-left: 120px;
+}
+
 .change input {
     margin-left: 32px;
 }
 
+.form-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
 .form-item label {
     font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 6px;
     font-weight: bold;
 }
 
@@ -353,9 +391,10 @@ textarea::placeholder {
 
 .column3 {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 4px;
-    margin-top: -25px;
+    margin-top: -5px;
 }
 
 .column3 label {
@@ -371,6 +410,8 @@ textarea::placeholder {
     width: 285px;
     background-color: #1e3a8a;
     color: #ffffff;
+    padding: 10px;
+    margin-top: -10px;
 }
 
 .profile {
