@@ -87,12 +87,13 @@ main {
 .history {
     display: grid;
     grid-template-columns: 1fr 300px 1fr;
-    place-items: center;
     background-color: #f8f9fa;
     padding: 40px 20px;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    justify-items: center;
+    align-items: start;
 }
 
 .history img {
@@ -104,6 +105,7 @@ main {
     color: #1f1f1f;
     font-weight: 500;
     line-height: 1.2;
+    padding: 0;
 }
 
 .history h2 {
@@ -111,6 +113,7 @@ main {
     font-size: 2rem;
     color: var(--primary-color);
     text-shadow: none;
+    margin-bottom: 30px;
 }
 
 .adventure {
