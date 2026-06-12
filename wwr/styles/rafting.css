@@ -707,7 +707,8 @@ textarea::placeholder {
     text-shadow: 0 1px 3px rgba(255, 255, 255, 0.7);
 }
 
-.service-card p {
+.service-card div {
     color: #555;
     line-height: 1.5;
+    padding: 10px 20px 10px 20px;
 }
