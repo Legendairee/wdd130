@@ -1,10 +1,7 @@
 :root {
     --primary-color: #055a05;
-    /* forest green */
     --accent1-color: #18292fd0;
-    /* dark slate blue */
     --accent2-color: #e9c56aeb;
-    /* light golden yellow */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -65,7 +62,6 @@ nav .navigation a {
     font-family: var(--heading-font);
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-
 }
 
 .navigation li {
@@ -90,14 +86,74 @@ main {
     box-sizing: border-box;
 }
 
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.hero article {
+    position: absolute;
+    width: 98%;
+    background-color: var(--accent2-color);
+    opacity: 1;
+    bottom: 5px;
+    left: 10px;
+    margin: 0;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    top: -1px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.95;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+}
+
+.hero article p {
+    color: #111111;
+}
+
+header img {
+    margin: 5px;
+}
+
 .history {
     display: grid;
     grid-template-columns: 1fr 300px 1fr;
     background-color: #f8f9fa;
     padding: 40px 20px;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px auto;
     justify-items: center;
     align-items: start;
 }
@@ -144,7 +200,6 @@ main {
     height: auto;
     border-radius: 4px;
     margin: 0 0 10px 0;
-
 }
 
 .adventure figure {
@@ -159,7 +214,6 @@ main {
     color: #1f1f1f;
     font-weight: 700;
     text-shadow: 0 1px 3px rgba(255, 255, 255, 0.7);
-
 }
 
 footer {
@@ -170,7 +224,6 @@ footer {
     margin-top: 20px;
     justify-items: center;
     place-content: center;
-
 }
 
 .socialmedia {
@@ -194,74 +247,7 @@ footer p {
     color: #ffffff;
     font-weight: 600;
     margin-left: 80px;
-
 }
-
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
-.hero {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    overflow: hidden;
-}
-
-.hero article {
-    position: absolute;
-    width: 98%;
-    background-color: var(--accent2-color);
-    opacity: 1;
-    bottom: 5px;
-    left: 10px;
-    margin: 0;
-
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-
-}
-
-.hero h1 {
-    position: absolute;
-    top: -1px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.95;
-    background-color: var(--accent1-color);
-    color: #fff;
-}
-
-.hero article img {
-    float: right;
-    width: 125px;
-}
-
-.hero article p {
-    color: #111111;
-}
-
-header img {
-    margin: 5px;
-}
-
-/* css for contact page */
 
 .address {
     text-align: center;
@@ -292,7 +278,6 @@ header img {
     margin: 0 auto;
     margin-top: 30px;
     padding: 10px;
-
 }
 
 .form {
@@ -327,13 +312,6 @@ textarea::placeholder {
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.radio-group label {
-    font-size: 12px;
-    font-weight: bold;
-    cursor: pointer;
-
 }
 
 .radio h2 {
@@ -387,12 +365,20 @@ textarea::placeholder {
     margin-bottom: 1rem;
 }
 
-.form-item label {
-    font-size: 14px;
+.form-item label,
+.radio-group label {
     font-weight: bold;
     margin-top: 5px;
     margin-bottom: 6px;
-    font-weight: bold;
+}
+
+.form-item label {
+    font-size: 14px;
+}
+
+.radio-group label {
+    font-size: 12px;
+    cursor: pointer;
 }
 
 .column2 textarea {
@@ -430,9 +416,8 @@ textarea::placeholder {
     place-items: center;
     gap: 10px;
     background-color: #eee;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
-    margin-top: 20px;
 }
 
 .profile h3 {
@@ -464,8 +449,6 @@ textarea::placeholder {
     text-shadow: 0 1px 3px rgba(255, 255, 255, 0.7);
 }
 
-/* CSS for the home page. indexhtml */
-
 .home-hero {
     position: relative;
     width: 100%;
@@ -474,12 +457,11 @@ textarea::placeholder {
     align-items: center;
     margin: 0;
     overflow: hidden;
-
 }
 
 .home-hero button {
     position: absolute;
-    top: 110px;
+    top: 95px;
     background-color: var(--accent2-color);
     color: #18292f;
     font-weight: 700;
@@ -516,7 +498,7 @@ textarea::placeholder {
 }
 
 .grid-container-two {
-    display: flex;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     justify-content: center;
@@ -603,7 +585,7 @@ textarea::placeholder {
 .newsletter {
     background-color: var(--primary-color);
     color: #fff;
-    padding: 3.5rem 1rem;
+    padding: 4.5rem 1rem;
     text-align: center;
     min-width: 500px;
     border-radius: 12px;
