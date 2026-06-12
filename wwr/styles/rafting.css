@@ -239,7 +239,7 @@ article {
 
 .hero h1 {
     position: absolute;
-    top: 20px;
+    top: -1px;
     width: 100%;
     padding: 16px;
     text-align: center;
@@ -477,18 +477,9 @@ textarea::placeholder {
 
 }
 
-.home-hero p {
-    position: absolute;
-    top: 50px;
-    padding: 5px;
-    text-align: center;
-    color: #fff;
-    font-weight: 700;
-}
-
 .home-hero button {
     position: absolute;
-    top: 95px;
+    top: 110px;
     background-color: var(--accent2-color);
     color: #18292f;
     font-weight: 700;
@@ -508,12 +499,16 @@ textarea::placeholder {
 
 .home-hero h1 {
     position: absolute;
-    top: 2px;
-    padding: 5px;
+    top: -1px;
+    width: 100%;
+    padding: 16px 20px;
     text-align: center;
-    color: white;
-    font-size: 2.5rem;
+    color: #ffffff;
+    font-size: 2rem;
     font-weight: 700;
+    background-color: var(--accent1-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .home-hero img {
