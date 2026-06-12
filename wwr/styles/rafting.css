@@ -693,10 +693,16 @@ textarea::placeholder {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: white;
+    background-color: white;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(30, 40, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card figure {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .services figcaption {
@@ -707,8 +713,9 @@ textarea::placeholder {
     text-shadow: 0 1px 3px rgba(255, 255, 255, 0.7);
 }
 
-.service-card div {
+.service-card p {
     color: #555;
     line-height: 1.5;
-    padding: 10px 20px 10px 20px;
+    padding: 0 10px 0 10px;
+    text-align: center;
 }
