@@ -729,7 +729,7 @@ textarea::placeholder {
     background-color: rgba(217, 161, 254, 0.063)
 }
 
-.content-div h2 {
+.content-div h1 {
     margin-bottom: 10px;
     color: #006400;
     padding: 16px 20px;
