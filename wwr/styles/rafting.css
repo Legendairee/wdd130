@@ -453,36 +453,36 @@ textarea::placeholder {
     text-shadow: 0 1px 3px rgba(255, 255, 255, 0.7);
 }
 
-/* This is home page css styling */
+/* This is home page css rule */
 
 .home-hero {
     position: relative;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0;
     overflow: hidden;
 }
 
-.home-hero button {
+.home-hero a {
     position: absolute;
-    top: 95px;
+    top: 80px;
     background-color: var(--accent2-color);
-    color: #18292f;
+    color: #393838;
     font-weight: 700;
     text-align: center;
     padding: 1rem 2rem;
-    border: none;
-    border-radius: 4px;
-    font-size: 1.1rem;
+    border-radius: 30px;
+    font-size: 1.4rem;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.4s;
+    text-decoration: none;
 }
 
-.home-hero button:hover {
+.home-hero a:hover {
     background-color: #fff;
-    transform: translateY(-3px);
 }
 
 .home-hero h1 {
@@ -522,7 +522,7 @@ textarea::placeholder {
 .action-container {
     min-width: 500px;
     margin: 0 auto;
-    background: white;
+    background-color: white;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
@@ -670,7 +670,7 @@ textarea::placeholder {
     padding: 20px;
 }
 
-.services h3 {
+.services h2 {
     grid-column: 1/4;
     margin-bottom: 10px;
     color: #006400;
@@ -718,4 +718,189 @@ textarea::placeholder {
     line-height: 1.5;
     padding: 0 10px 0 10px;
     text-align: center;
+}
+
+/* This is the css rule for the Trip page */
+
+.content-div {
+    text-align: center;
+    padding: 15px 0 15px 0;
+    border-radius: 15px;
+    background-color: rgba(217, 161, 254, 0.063)
+}
+
+.content-div h2 {
+    margin-bottom: 10px;
+    color: #006400;
+    padding: 16px 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+    box-shadow: 3px 0 10px 0 rgba(11, 118, 34, 0.1);
+
+}
+
+.content-div p {
+    color: #393838;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--accent2-color);
+    color: #393838;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 15px;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    background-color: #eee;
+    transform: scale(1.05);
+}
+
+.button2 {
+    font-size: 1.3rem;
+    padding: 18px 40px;
+}
+
+.trips-table-section {
+    padding: 10px 20px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: #f8f9fa;
+}
+
+.trips-table-section h3 {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #fff;
+    margin-bottom: 10px;
+    color: #006400;
+    padding: 16px 20px;
+    font-weight: 700;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.table-container {
+    overflow-x: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    padding: 0 15px 15px 15px;
+}
+
+.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+
+.trips-table th {
+    background-color: var(--accent1-color);
+    padding: 18px 12px;
+    text-align: left;
+    font-size: 1.1rem;
+    white-space: nowrap;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid rgb(150 150 150);
+}
+
+.trips-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    color: #393838;
+    font-weight: 500;
+    border: 1px solid rgb(150 150 150);
+}
+
+.trips-table tr:hover {
+    background-color: rgba(78, 78, 78, 0.128);
+
+}
+
+.table-button {
+    display: inline-block;
+    background-color: var(--accent2-color);
+    color: #393838;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.table-button:hover {
+    background-color: #ff8c33;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.section {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+    padding-bottom: 80px;
+    box-sizing: border-box;
+}
+
+.section h2 {
+    padding: 40px 0;
+    color: #006400;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+
+}
+
+.main-container {
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2px;
+    padding: 0 20px;
+    margin-top: -10px;
+    box-sizing: border-box;
+}
+
+.gallery {
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.image-div {
+    width: 100%;
+    position: relative;
+    padding-top: 55%;
+    overflow: hidden;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+.gallery figcaption {
+    color: white;
+    text-align: center;
+    padding: 20px 10px 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
 }
