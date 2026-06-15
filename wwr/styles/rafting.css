@@ -561,7 +561,7 @@ textarea::placeholder {
 .trip-details {
     list-style: none;
     padding: 0;
-    line-height: 2rem;
+    line-height: 2.5rem;
 }
 
 .trip-details li {
